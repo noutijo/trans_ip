@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="522.0" style="-fx-background-color: white;" stylesheets="@../styles/styleScroll.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleurs.AboutController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="6.0" prefHeight="448.0" prefWidth="468.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="477.0" layoutY="14.0" onMouseClicked="#fermerCliquer" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Delete_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Text layoutX="87.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    Pour le transfert des données, vous devez vous assurer que votre firewall est désactivé de même que vos anti-virus." textAlignment="JUSTIFY" wrappingWidth="348.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="89.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/appicon.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="375.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vs 1.0" wrappingWidth="57.560550816357136">
+               <font>
+                  <Font name="Bell MT Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="103.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" En cas de problème, veillez relancer l’application dans les deux machines." textAlignment="JUSTIFY" wrappingWidth="333.99999928474426">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="394.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© trans-ip 2019" wrappingWidth="103.56055081635714">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <DropShadow color="#9a9a9a" />
+   </effect>
+</AnchorPane>

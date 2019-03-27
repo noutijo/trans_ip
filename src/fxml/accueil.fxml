@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="443.0" minWidth="638.0" prefHeight="443.0" prefWidth="638.0" stylesheets="@../styles/tabPane.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleurs.AccueilController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TabPane id="tabPane" prefHeight="560.0" prefWidth="584.0" side="LEFT" style="-fx-border-color: #f8f9fc;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                  <Tab id="hear1" fx:id="Seigneur">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" style="-fx-background-color: white;">
+                           <children>
+                              <HBox alignment="CENTER" layoutX="29.0" layoutY="38.0" prefHeight="335.0" prefWidth="468.0" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="38.0">
+                                 <children>
+                                    <VBox prefHeight="245.0" prefWidth="345.0" spacing="30.0">
+                                       <children>
+                                          <Text fx:id="alertEnvoyer" fill="#ee7777" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="340.0" />
+                                          <HBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <JFXTextField fx:id="textFieldSelectionnerEnvoyer" editable="false" focusColor="#00aff0" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Sélectionnez le fichier" />
+                                                <HBox alignment="CENTER" onMouseClicked="#choisirFichierCliquerEnvoyer">
+                                                   <children>
+                                                      <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../icons/Open%20Folder%20in%20New%20Tab_50px.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <JFXTextField fx:id="textFieldAddressIPEnvoyer" focusColor="#00aff0" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Addresse IP" text="127.0.0.1" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <JFXTextField fx:id="portEnvoyer" focusColor="#00aff0" labelFloat="true" prefHeight="25.0" prefWidth="50.0" promptText="Port" text="5745" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_RIGHT">
+                                             <children>
+                                                <JFXButton onMouseClicked="#annulerCliquerrEnvoyer" prefHeight="27.0" prefWidth="125.0" style="-fx-background-color: transparent; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: #ea5e5e;" text="Annuler" textFill="#ea5e5e">
+                                                   <HBox.margin>
+                                                      <Insets right="20.0" />
+                                                   </HBox.margin>
+                                                   <graphic>
+                                                      <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../icons/Cancel_48px.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                                <JFXButton onMouseClicked="#envoyerCliquerrEnvoyer" prefWidth="125.0" style="-fx-background-color: transparent; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: #00aff0;" text="Envoyer" textFill="#00aff0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../icons/sent.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic></JFXButton>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets top="40.0" />
+                                 </padding>
+                              </HBox>
+                              <Separator layoutX="46.0" layoutY="388.0" opacity="0.7" prefHeight="1.0" prefWidth="415.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="0.0" />
+                              <HBox alignment="CENTER" layoutX="400.0" layoutY="395.0" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="42.0" />
+                              <Separator layoutX="11.0" layoutY="31.0" opacity="0.5" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                                 <effect>
+                                    <DropShadow color="#6b6a6a" />
+                                 </effect>
+                              </Separator>
+                              <ProgressIndicator fx:id="progressEnvoyer" layoutX="433.0" layoutY="395.0" prefHeight="40.0" prefWidth="38.0" progress="0.0" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="40.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <graphic>
+                        <HBox id="h1" alignment="CENTER_LEFT" spacing="10.0" style="-fx-background-color: transparent;">
+                           <children>
+                              <ImageView id="img1" fitHeight="25.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Text id="t1" strokeType="OUTSIDE" strokeWidth="0.0" text="Envoyer">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </Tab>
+                  <Tab id="hear2">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                           <children>
+                              <HBox alignment="CENTER" layoutX="24.0" layoutY="32.0" prefHeight="347.0" prefWidth="444.0" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="32.0">
+                                 <children>
+                                    <VBox prefHeight="245.0" prefWidth="345.0" spacing="30.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <JFXTextField fx:id="textFieldRecevoir" editable="false" focusColor="#00aff0" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Dossier de sauvegarge" text="C:\oreolnoumodong\" />
+                                                <HBox fx:id="choisirRecevoir" alignment="CENTER" onMouseClicked="#choisirCheminSauvegardeCliquerRecevoir">
+                                                   <children>
+                                                      <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../icons/Save_50px.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <JFXTextField fx:id="portRecevoir" focusColor="#00aff0" labelFloat="true" prefHeight="25.0" prefWidth="50.0" promptText="Port" text="5745" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_RIGHT">
+                                             <children>
+                                                <JFXButton onMouseClicked="#telechargerCliquerRecevoir" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: transparent; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: #00aff0;" text="Télécharger" textFill="#00aff0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../icons/receive2.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </JFXButton>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="30.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets top="130.0" />
+                                 </padding>
+                              </HBox>
+                              <Separator layoutX="94.0" layoutY="411.0" opacity="0.7" prefHeight="1.0" prefWidth="200.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" />
+                              <ProgressIndicator fx:id="progressRecevoir" layoutX="457.0" layoutY="390.0" prefHeight="40.0" prefWidth="38.0" progress="0.0" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="40.0" />
+                              <Separator opacity="0.5" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                                 <effect>
+                                    <DropShadow color="#6b6a6a" />
+                                 </effect>
+                              </Separator>
+                           </children></AnchorPane>
+                     </content>
+                     <graphic>
+                        <HBox id="h2" alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <ImageView id="img2" fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Text id="t2" strokeType="OUTSIDE" strokeWidth="0.0" text="Recevoir">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </Tab>
+               </tabs>
+            </TabPane>
+            <VBox alignment="CENTER" layoutX="30.0" layoutY="332.0" onMouseClicked="#aboutCliquer" prefHeight="40.0" prefWidth="40.0" styleClass="rounBut" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Info_48p.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="40.0" layoutY="342.0" onMouseClicked="#helpCliquer" prefHeight="40.0" prefWidth="40.0" styleClass="rounBut" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="45.0">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Help_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <AnchorPane fx:id="panControlMouse" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <StackPane fx:id="panStackFocus" layoutX="14.0" layoutY="64.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane fx:id="panFocus" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="525.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleurs.AboutController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="6.0" prefHeight="448.0" prefWidth="468.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="40.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="91.0">
+               <image>
+                  <Image url="@../icons/appicon.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" layoutX="12.0" layoutY="132.0" prefHeight="50.0" prefWidth="378.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="     trans-ip est une application permettant le transfert des données dans un réseau local entre deux machines." textAlignment="JUSTIFY" wrappingWidth="370.560546875">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="12.0" layoutY="182.0" prefHeight="50.0" prefWidth="378.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="      Develeppée par Noumodong Tindjong junior-Oréol étudiant à SUP'PTIC cycle Ingénieur option Informatique et Réseaux. " wrappingWidth="370.560546875">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox layoutX="70.0" layoutY="334.0" AnchorPane.bottomAnchor="90.0" AnchorPane.rightAnchor="238.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="oreolnoumodong@gmail.com" wrappingWidth="186.560546875">
+                     <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="39.0" layoutY="298.0" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="298.0">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Phone_32px.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="+237 690 079 333" wrappingWidth="153.560546875">
+                     <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <VBox alignment="CENTER" layoutX="12.0" layoutY="246.0" prefHeight="50.0" prefWidth="378.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="      Passioné de la programmation plus précisemment dans le developpement des applications web,Android et Desktop plus orienté ergonomie." wrappingWidth="370.560546875">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="199.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Marker_32px.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="210.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yaoundé, Cameroun " wrappingWidth="153.56055081635714">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="395.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© trans-ip 2019" wrappingWidth="103.56055081635714" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="32.0">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="326.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vs 1.0" wrappingWidth="57.560550816357136" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font name="Bell MT Bold" size="12.0" />
+               </font>
+            </Text>
+            <VBox alignment="CENTER" layoutX="477.0" layoutY="14.0" onMouseClicked="#fermerCliquer" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Delete_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <DropShadow color="#9a9a9a" />
+   </effect>
+</AnchorPane>
